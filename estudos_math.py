@@ -45,7 +45,7 @@ def real_to_dolar():
     real =(input('Insira a quantidade de Reais para converter: BRL R$'))
     real_to_dolar = (int(real)/int(rate))
     print(f'R${round(int(real))} = ${round(int(real_to_dolar))}')
-
+    
 # Exercicio 7
 # Convertendo Dólar para Real
 from forex_python.converter import CurrencyRates
