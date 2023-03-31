@@ -37,3 +37,21 @@ def circulo():
     print(f"A área do circulo é {round(area)}Cm")
 
 # Exercicio 6
+# Convertendo Real para Dólar
+from forex_python.converter import CurrencyRates
+def real_to_dolar():
+    c = CurrencyRates()
+    rate = c.get_rate('USD', 'BRL')
+    real =(input('Insira a quantidade de Reais para converter: BRL R$'))
+    real_to_dolar = (int(real)/int(rate))
+    print(f'R${round(int(real))} = ${round(int(real_to_dolar))}')
+
+# Exercicio 7
+# Convertendo Dólar para Real
+from forex_python.converter import CurrencyRates
+def dolar_to_real():
+    c = CurrencyRates()
+    rate = c.get_rate('BRL', 'USD')
+    dolar =(input('Insira a quantidade de Dólares para converter: USD $'))
+    dolar_to_real = (int(dolar)/rate)
+    print(f'USD ${round(int(dolar))} = BRL R${round(int(dolar_to_real))} ')
