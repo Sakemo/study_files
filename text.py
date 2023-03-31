@@ -1,3 +1,4 @@
+# Exemplo de gerador de planilha em Python
 import openpyxl
 
 # Cria uma nova planilha
